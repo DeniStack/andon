@@ -3,5 +3,5 @@ MSSQL_ANDON_CONNECTION = {
     'Server': '10.3.28.68',
     'Database': 'andon',
     'UID': 'andon',
-    'PWD': 'Hh8Nr!DnfQSIoCc#ptl9'
+    'PWD': 'your pass'
 }
