@@ -1,7 +1,7 @@
 FB_ANDON_CONNECTION = {
     'host': 'your host ip',
-    'database': '/var/lib/firebird/3.0/data/jfdb.fdb',
-    'port': 3050,
-    'user': 'BDE',
+    'database': 'your db file endwing with .fdb',
+    'port': your port,
+    'user': 'your username',
     'password': 'your pass'    
 }
