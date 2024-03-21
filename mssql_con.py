@@ -59,19 +59,4 @@ class MSSQLConnection:
             self.cursor.execute(insert_str, *row)
         self.cursor.commit()
 
-    # def insert_values(self, table_name: str, df: pd.DataFrame):
-    #     column_str = '(' + ' '.join(' ' + column_name + ',' for column_name in df.columns)[1:-1] + ')'
-    #     parameter_str = '(' + ' '.join(' ?,' for column_name in df.columns)[1:-1] + ')'
-    #     insert_str = '''
-    #     BEGIN
-    #         IF NOT EXISTS (SELECT * FROM {0} 
-    #                     WHERE ID = ?)
-    #         BEGIN
-    #             INSERT INTO {0} {1}
-    #             VALUES {2}
-    #         END
-    #     END
-    #     '''.format(table_name, column_str, parameter_str)
-    #     for index, row in df.iterrows():
-    #         self.cursor.execute(insert_str,  row[0], *row)
-    #     self.cursor.commit()    
+   
